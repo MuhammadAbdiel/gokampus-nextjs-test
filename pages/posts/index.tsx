@@ -7,7 +7,9 @@ import { Button } from "src/components/ui/button";
 import { redirect } from "next/navigation";
 import Link from "next/link";
 
-const PostItem = dynamic(() => import("../../components/PostItem"));
+const PostItem = dynamic(() => import("../../components/PostItem"), {
+  ssr: false,
+});
 
 export type Post = {
   id: number;

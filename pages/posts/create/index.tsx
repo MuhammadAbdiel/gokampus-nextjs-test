@@ -5,9 +5,7 @@ import { Button } from "src/components/ui/button";
 import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import dynamic from "next/dynamic";
-
-const InputForm = dynamic(() => import("../../../components/InputForm"));
+import InputForm from "src/components/InputForm";
 
 const CreatePost = () => {
   const router = useRouter();

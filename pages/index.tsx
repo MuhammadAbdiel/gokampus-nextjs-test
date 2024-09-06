@@ -1,6 +1,7 @@
 import { Poppins } from "next/font/google";
 import Link from "next/link";
 import Head from "next/head";
+import { useRef } from "react";
 
 const poppins = Poppins({
   subsets: ["latin"],
